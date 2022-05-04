@@ -2,6 +2,7 @@ body {
     color: rgb(80, 46, 46);
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
 }
 
 #header-nav {
@@ -17,7 +18,7 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    opacity: .;
+    opacity: .9;
     margin: 20px 20px;
 }
 
@@ -57,6 +58,7 @@ body {
 #nav-list a {
     color: #951C49;
     text-align: center;
+    padding-left: 15px;
 }
 
 #nav-list a:hover {
@@ -66,7 +68,7 @@ body {
 
 #nav-list a span {
     font-size: 1.8em;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 #phone {
@@ -84,6 +86,60 @@ body {
     padding-right: 15px;
 }
 
+.navbar-header .navbar-toggle, 
+.navbar-header .icon-bar {
+    border: 1px solid #61122f;;
+}
+
+.navbar-header .navbar-toggle {
+    clear:both;
+}
+
+.glyphicon {
+    font-size:30px;
+}
 
 
 
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+#logo-img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 10px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+
+}
+
+@media (max-width: 768px) {
+.navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+}
+
+.navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+}
+.navbar-brand p{
+    font-size: .8em;
+    margin-top: 12px;
+}
+
+#collapsable-nav a {
+    font-size: 1.3em;
+}
+
+#collapsable-nav a span {
+    font-size: 1em;
+    margin-right: 10px;
+}
+}
