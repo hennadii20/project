@@ -5,6 +5,12 @@ body {
     font-size: 16px;
 }
 
+header {
+    position: sticky;
+    width: 100vw;
+}
+
+
 #header-nav {
     background-color: rgb(245, 204, 109);
     border-radius: 0;
@@ -91,7 +97,7 @@ body {
 }
 
 .jumbotron{
-    background-image: url('/images/jumbotron.jpg');
+    background-image: url('../images/jumbotron.jpg');
     background-size: cover;
     background-position: center; 
     width: 100%;
