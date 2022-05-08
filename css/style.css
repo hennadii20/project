@@ -235,6 +235,15 @@ nav#header-nav {
 }
 
 .jumbotron{
-    height: 400px;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+#menu-tile,
+#specials-tile,
+#map-tile {
+    height: 280px;
+    width: 75%;
+    margin: 15px auto;
 }
 }
