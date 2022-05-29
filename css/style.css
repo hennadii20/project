@@ -40,7 +40,8 @@ header {
     margin-bottom: 0;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover,
+.navbar-brand a:focus {
     text-decoration: none;
 }
 
@@ -67,9 +68,10 @@ ul#nav-list {
 }
 
 #nav-list a:hover {
-    transition: all ease .25s;
+    /* transition: all ease .25s; */
     padding-bottom: 5px;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    border-bottom: 2px solid rgb(100, 100, 100);
 }
 
 #nav-list a span {
@@ -86,24 +88,25 @@ ul#nav-list {
     font-weight: bold;
 }
 
-.navbar-header .navbar-toggle, 
+.navbar-header .navbar-toggle,
 .navbar-header .icon-bar {
-    border: 1px solid #61122f;;
+    border: 1px solid #61122f;
+    ;
 }
 
 .navbar-header .navbar-toggle {
-    clear:both;
+    clear: both;
 }
 
 .glyphicon {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
 
-.jumbotron{
+.jumbotron {
     background-image: url('../images/jumbotron.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     width: 100%;
     height: 700px;
     border: 2px solid rgba(97, 18, 47, .5);
@@ -124,7 +127,7 @@ ul#nav-list {
 #menu-tile:hover,
 #specials-tile:hover,
 #map-tile:hover {
-      box-shadow: 0 2px 8px 2px #6e6e6e;
+    box-shadow: 0 2px 8px 2px #6e6e6e;
 }
 
 #menu-tile {
@@ -159,7 +162,6 @@ ul#nav-list {
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* background-color: #222; */
     border-top: 0;
 }
 
@@ -169,81 +171,124 @@ ul#nav-list {
 }
 
 footer section {
-   text-align: center;
+    text-align: center;
 }
 
 footer span {
     font-weight: bold;
 }
 
+                                        /* MENU CATEGORY */
 
 
-@media (min-width: 1200px) {
-  
+.category-tile {
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(180, 179, 179);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-
-#logo-img {
-    width: 90px;
-    height: 90px;
-    margin: 10px 10px;
+.category-tile span {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .6);
+    color: rgb(255, 255, 255);
 }
 
-.jumbotron{
-    height: 595px;
-}
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-
-.jumbotron{
-    height: 480px;
+.category-tile:hover {
+    border: 1px;
 }
 
-.navbar-brand h1 {
+#menu-categories-title {
+    margin-bottom: 50px;
+    color: #557c3e;
     font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
 }
 
-nav#header-nav {
-    height: 130px;
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        width: 90px;
+        height: 90px;
+        margin: 10px 10px;
+    }
+
+    .jumbotron {
+        height: 595px;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron {
+        height: 480px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.8em;
+    }
+
+    nav#header-nav {
+        height: 130px;
+    }
 }
 
 @media (max-width: 767px) {
-.navbar-brand {
-    padding-top: 10px;
-    height: 70px;
+    .navbar-brand {
+        padding-top: 10px;
+        height: 70px;
+    }
+
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+
+    .navbar-brand p {
+        font-size: .8em;
+        margin-top: 12px;
+    }
+
+    #collapsable-nav a {
+        font-size: 1.3em;
+    }
+
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .jumbotron {
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    #menu-tile,
+    #specials-tile,
+    #map-tile {
+        height: 280px;
+        width: 75%;
+        margin: 15px auto;
+    }
 }
 
-.navbar-brand h1{
-    padding-top: 10px;
-    font-size: 5vw;
-}
-.navbar-brand p{
-    font-size: .8em;
-    margin-top: 12px;
-}
 
-#collapsable-nav a {
-    font-size: 1.3em;
-}
-
-#collapsable-nav a span {
-    font-size: 1em;
-    margin-right: 10px;
-}
-
-.jumbotron{
-    height: 350px;
-    margin-bottom: 15px;
-}
-
-#menu-tile,
-#specials-tile,
-#map-tile {
-    height: 280px;
-    width: 75%;
-    margin: 15px auto;
-}
+@media (max-width: 500px){
+    .col-xxs {
+        width: 100%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
 }
