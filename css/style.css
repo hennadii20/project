@@ -209,10 +209,32 @@ footer span {
 
 #menu-categories-title {
     margin-bottom: 50px;
-    color: #557c3e;
-    font-size: 1.8em;
+    color: #547a3e;
+    font-size: 2.2em;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
+}
+
+
+                /* Sinh_up */
+
+.form-wrapper {
+    width: 40%;
+    margin: 100px auto;
+}
+
+.form-control{
+    padding: 25px 10px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 1.5em;
+    color: #547a3e;
+}
+
+.btn-submit {
+    margin: 20px auto;
 }
 
 
@@ -225,6 +247,15 @@ footer span {
 
     .jumbotron {
         height: 595px;
+    }
+
+    #menu-categories-title {
+        font-size: 2em;
+    }
+
+    .form-wrapper {
+        width: 60%;
+        margin: 100px auto;
     }
 }
 
@@ -239,6 +270,15 @@ footer span {
 
     nav#header-nav {
         height: 130px;
+    }
+
+    #menu-categories-title {
+        font-size: 1.9em;
+    }
+
+    .form-wrapper {
+        width: 70%;
+        margin: 50px auto;
     }
 }
 
@@ -279,10 +319,25 @@ footer span {
         width: 75%;
         margin: 15px auto;
     }
+
+    #menu-categories-title {
+        font-size: 1.6em;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        margin: 30px auto;
+    }
 }
 
 
 @media (max-width: 500px){
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 7vw;
+    }
+
+
     .col-xxs {
         width: 100%;
         position: relative;
@@ -290,5 +345,10 @@ footer span {
         padding-right: 15px;
         padding-left: 15px;
         float: left;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        margin: 20px auto;
     }
 }
