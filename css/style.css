@@ -65,13 +65,13 @@ ul#nav-list {
     color: #951C49;
     text-align: center;
     padding-left: 15px;
+    transition: all ease .5s;
 }
 
 #nav-list a:hover {
-    /* transition: all ease .25s; */
-    padding-bottom: 5px;
-    /* color: rgb(255, 255, 255); */
-    border-bottom: 2px solid rgb(100, 100, 100);
+    background-color: #951C49;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
 
 #nav-list a span {
