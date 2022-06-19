@@ -9,76 +9,74 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-
     <title>Fresh coffee</title>
-
 </head>
 
 <body>
-    <header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container header-container">
-                <div class="navbar-header">
-                    <a href="index.html" class="pull-left visible-md visible-lg">
-                        <div id="logo-img" alt="Logo image"></div>
-                    </a>
-                    <div class="navbar-brand">
-                        <a href="index.html">
-                            <h1>Fresh coffee for every day</h1>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+                <div class="container header-container">
+                    <div class="navbar-header">
+                        <a href="index.html" class="pull-left visible-md visible-lg">
+                            <div id="logo-img" alt="Logo image"></div>
                         </a>
-                        <p><span>Quality certificate</span></p>
+                        <div class="navbar-brand">
+                            <a href="index.html">
+                                <h1>Fresh coffee for every day</h1>
+                            </a>
+                            <p><span>Quality certificate</span></p>
+                        </div>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#collapsable-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#collapsable-nav" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-info-sign"></span><br class='hidden-xs'>About</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">
+                                    <span class="glyphicon glyphicon-cutlery"></span><br class='hidden-xs'>Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span><br class='hidden-xs'>Sigh up</a>
+                            </li>
+                            <li>
+                                <a href="tel:063-600-0004" class="tel"><span
+                                        class="glyphicon glyphicon-earphone icon"></span><br class='hidden-xs'>
+                                    063-600-0004</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </header>
 
-                <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-info-sign"></span><br class='hidden-xs'>About</a>
-                        </li>
-                        <li>
-                            <a href="menu.html">
-                                <span class="glyphicon glyphicon-cutlery"></span><br class='hidden-xs'>Menu</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-user"></span><br class='hidden-xs'>Sigh up</a>
-                        </li>
-                        <li>
-                            <a href="tel:063-600-0004" class="tel"><span
-                                    class="glyphicon glyphicon-earphone icon"></span><br class='hidden-xs'>
-                                063-600-0004</a>
-                        </li>
-
-                    </ul>
+        <div class="form-wrapper">
+            <h2 id="menu-categories-title" class='text-center'>Sing up</h2>
+            <form method="POST">
+                <div class="form-group">
+                <label for="inputLogin">Login:</label>
+                <input type="text" name="login"  class="form-control" id="inputLogin"  placeholder="Enter login" required>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="form-wrapper">
-        <h2 id="menu-categories-title" class='text-center'>Sing up</h2>
-        <form method="POST">
-            <div class="form-group">
-              <label for="inputLogin">Login:</label>
-              <input type="text" name="login"  class="form-control" id="inputLogin"  placeholder="Enter login" required>
-            </div>
-            <div class="form-group">
-              <label for="inputPassword">Password:</label>
-              <input type="password" name='password' class="form-control form-control-lg" id="inputPassword" placeholder="Enter password" required>
-            </div>
-            <div>
-                <button type="submit" class="login-input" name='submit'>Submit</button>
-            </div>
-          </form>
-    </div>
-
-      </body>
+                <div class="form-group">
+                <label for="inputPassword">Password:</label>
+                <input type="password" name='password' class="form-control form-control-lg" id="inputPassword" placeholder="Enter password" required>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit" class="button-submit" name='submit'>Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
