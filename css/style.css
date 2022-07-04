@@ -67,11 +67,6 @@ ul#nav-list {
     padding-left: 15px;
 }
 
-#nav-list a:hover {
-    padding-bottom: 5px;
-    border-bottom: 2px solid rgb(100, 100, 100);
-}
-
 #nav-list a span {
     font-weight: bold;
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "01",
+        "name": "americano",
+        "url": "images/americano_2.jpg"
+    },
+    {
+        "id": "02",
+        "name": "espresso",
+        "url": "images/espresso.jpg"
+    },
+    {
+        "id": "03",
+        "name": "frappe",
+        "url": "images/frappe.jpg"
+    },
+    {
+        "id": "04",
+        "name": "iced coffee",
+        "url": "images/iced_coffee.jpg"
+    },
+    {
+        "id": "05",
+        "name": "irish coffee",
+        "url": "images/irish_coffee.jpg"
+    },
+    {
+        "id": "06",
+        "name": "latte",
+        "url": "images/latte_2.jpg"
+    },
+    {
+        "id": "07",
+        "name": "mocha",
+        "url": "images/mocha.jpeg"
+    },
+    {
+        "id": "08",
+        "name": "cappuccino",
+        "url": "images/cappuccino.png"
+    }
+]
