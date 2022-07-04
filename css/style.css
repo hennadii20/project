@@ -65,6 +65,13 @@ ul#nav-list {
     color: #951C49;
     text-align: center;
     padding-left: 15px;
+    transition: all ease .5s;
+}
+
+#nav-list a:hover {
+    background-color: #951C49;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
 
 #nav-list a span {
